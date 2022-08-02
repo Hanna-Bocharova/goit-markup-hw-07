@@ -9,54 +9,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main.min.css">
         <link rel="stylesheet" href="./css/normalise.css">
         
     </head>
 
     <body class="page">
-            <header class="header header-border">
-                <div class="container">
-                    <div class="section-header">
-                        <nav class="header-nav">
-                            <a class="logo link" href=""><span class="accent">Web</span>Studio</a>
+            <header>
+                <nav class="container nav nav--border">
+                    <a class="logo link" href=""><span class="accent">Web</span>Studio</a>
+                    <ul class="nav__list list">
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--black link" href="./index.html">Студия</a>
+                        </li>
             
-                            <ul class="header-list list">
-                                <li class="header-list-link">
-                                    <a class="header-link  link" href="./index.html">Студия</a>
-                                </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--black nav__current link" href="./portfolio.html">Портфолио</a>
+                        </li>
             
-                                <li class="header-list-link">
-                                    <a class="header-link current link" href="./portfolio.html">Портфолио</a>
-                                </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--black link" href="">Контакты</a>
+                        </li>
+                    </ul>
             
-                                <li class="header-list-link">
-                                    <a class="header-link link" href="">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <ul class="nav__adress list">
+                        <li class="nav__item">
+                            <a class="nav__link link nav__mail" href="mailto:info@devstudio.com">
+                                <svg class="nav__icon" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                            </a>
+                        </li>
             
-                        <ul class="header-contakts-list list">
-                            <li class="contacts-link">
+                        <li class="nav__item">
+                            <a class="nav__link link nav__phone" href="tel:+380961111111">
+                                <svg class="nav__icon" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             
-                                <a class="header-contakts-link link mail" href="mailto:info@devstudio.com">
-                                    <svg class="header-contakts-icon" aria-hidden="true">
-                                        <use href="./images/icons.svg#icon-envelope"></use>
-                                    </svg>
-                                </a>
-                            </li>
             
-                            <li class="contacts-link">
-            
-                                <a class="header-contakts-link link phone" href="tel:+380961111111">
-                                    <svg class="header-contakts-icon" aria-hidden="true">
-                                        <use href="./images/icons.svg#icon-smartphone"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             
             </header>
         <main>
@@ -71,184 +66,158 @@
                         <li class="btn-list"><button class="button" type="button">Маркетинг</button></li>
                     </ul>
 
-                    <ul class="container-project projects list">
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/веб-сайт.jpg" alt="Веб-сайт" height="405">
-                                            <div class="project-overlay">
-                                                <p>
-                                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                                                    получить
-                                                    исчерпывающие сведения о компании или частном лице.
-                                                </p>
-                                             </div>
+                    <ul class="container project list">
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/веб-сайт.jpg" alt="Веб-сайт" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Технокряк</h2>
-                                        <p class="projects-items">Веб-сайт</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Технокряк</h2>
+                                        <p class="project__text">Веб-сайт</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/дизайн.jpg" alt="Дизайн" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/дизайн.jpg" alt="Дизайн" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                                        <p class="projects-items">Дизайн</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                                        <p class="project__text">Дизайн</p>
                                     </div>
                                 </a>
                                 
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/приложение1.jpg" alt="Приложение" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/приложение1.jpg" alt="Приложение" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Ресторан Seafood</h2>
-                                        <p class="projects-items">Приложение</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Ресторан Seafood</h2>
+                                        <p class="project__text">Приложение</p>
                                     </div>
                                 </a>
                                 
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/маркетинг.jpg" alt="Маркетинг" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/маркетинг.jpg" alt="Маркетинг" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Проект Prime</h2>
-                                        <p class="projects-items">Маркетинг</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Проект Prime</h2>
+                                        <p class="project__text">Маркетинг</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/приложение.jpg" alt="Приложение" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/приложение.jpg" alt="Приложение" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Проект Boxes</h2>
-                                        <p class="projects-items">Приложение</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Проект Boxes</h2>
+                                        <p class="project__text">Приложение</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/веб-сайт1.jpg" alt="Веб-сайт" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/веб-сайт1.jpg" alt="Веб-сайт" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Inspiration has no Borders</h2>
-                                        <p class="projects-items">Веб-сайт</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Inspiration has no Borders</h2>
+                                        <p class="project__text">Веб-сайт</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/дизайн.jpg" alt="Дизайн" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/дизайн.jpg" alt="Дизайн" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Издание Limited Edition</h2>
-                                        <p class="projects-items">Дизайн</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Издание Limited Edition</h2>
+                                        <p class="project__text">Дизайн</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/маркетинг1.jpg" alt="Маркетинг" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/маркетинг1.jpg" alt="Маркетинг" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Проект LAB</h2>
-                                        <p class="projects-items">Маркетинг</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Проект LAB</h2>
+                                        <p class="project__text">Маркетинг</p>
                                     </div>
                                 </a>
                             </li>
-                            <li class="element-project">
-                                <a class="project-link link" href="">
-                                    <div class="project-img">
-                                        <img src="./portfolio/приложение2.jpg" alt="Приложение" height="405">
-                                        <div class="project-overlay">
-                                            <p>
-                                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                                посетителю
-                                                получить
-                                                исчерпывающие сведения о компании или частном лице.
-                                            </p>
-                                        </div>
+                            <li class="project__list">
+                                <a class="project__link link" href="">
+                                    <img class="project__img" src="./images/portfolio/приложение2.jpg" alt="Приложение" height="405">
+                                    <div class="project__overlay">
+                                        <p>
+                                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                            посетителю
+                                            получить
+                                            исчерпывающие сведения о компании или частном лице.
+                                        </p>
                                     </div>
-                                    
-                                    <div class="projects-item">
-                                        <h2 class="projects-title">Growing Business</h2>
-                                        <p class="projects-items">Приложение</p>
+                                    <div class="project__group">
+                                        <h2 class="project__title">Growing Business</h2>
+                                        <p class="project__text">Приложение</p>
                                     </div>
                                 </a>
                             </li>
@@ -284,28 +253,28 @@
                     <b class="cta">присоединяйтесь</b>
                     <ul class="list list-cta">
                         <li class="social-item-cta">
-                            <a class="social-icon-footer link" href="#">
+                            <a class="social-list__link social-list__link--grey link" href="#">
                                 <svg class="social-icon-cta" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-insta"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-item-cta">
-                            <a class="social-icon-footer link" href="#">
+                            <a class="social-list__link social-list__link--grey link" href="#">
                                 <svg class="social-icon-cta" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-tw"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-item-cta">
-                            <a class="social-icon-footer link" href="#">
+                            <a class="social-list__link social-list__link--grey link" href="#">
                                 <svg class="social-icon-cta" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-fb"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-item-cta">
-                            <a class="social-icon-footer link" href="#">
+                            <a class="social-list__link social-list__link--grey link" href="#">
                                 <svg class="social-icon-cta" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-in"></use>
                                 </svg>

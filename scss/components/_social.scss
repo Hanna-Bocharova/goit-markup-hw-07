@@ -1,0 +1,45 @@
+.social-list {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.social-list__item:first-child {
+    margin-left: 32px;
+}
+
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-list__link--grey {
+    background-color: #434343;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+    cursor: pointer;
+    background-color: var(--color-accent);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.social-list__icon {
+    fill: var(--color-client);
+    cursor: pointer;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.social-list__icon:hover {
+    fill: var(--color-tertiary);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}

@@ -1,0 +1,71 @@
+.follow-form {
+    display: block;
+    margin-left: auto;
+}
+
+.form-follow-send {
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-follow-input {
+    height: 50px;
+    width: 358px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-primary);
+    font: inherit;
+}
+
+.form-follow-input:hover,
+.form-follow-input:focus {
+    border-color: var(--color-accent);
+    color: var(--color-tertiary);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.form-follow-input::placeholder {
+    padding: 15px 295px 15px 16px;
+}
+
+.form-field-input:hover+svg,
+.form-field-input:focus+svg {
+    fill: var(--color-accent);
+    border-color: var(--color-accent);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.form-send-button {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background-color: var(--color-accent);
+    border-radius: 4px;
+    padding: 27px;
+    border: none;
+    margin-left: 12px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--color-tertiary);
+}
+
+.form-send-icon {
+    position: absolute;
+    fill: var(--color-tertiary);
+    right: 28px;
+    top: 13px;
+    margin-left: 10px;
+}

@@ -1,0 +1,103 @@
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+
+.accent {
+    color: var(--color-accent);
+}
+
+.nav__list {
+    margin-left: 93px;
+}
+
+.nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    
+    display: flex;
+    align-items: center;
+    fill: var(--color-primary);
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.nav__link--black {
+    color: var(--color-secondary);
+}
+
+.nav__current {
+    position: relative;
+}
+
+.nav__link.nav__current::after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    background-color: var(--color-accent);
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.nav__mail::after {
+    content: 'info@devstudio.com';
+    display: inline-block;
+}
+
+.nav__phone::after {
+    content: '+38 096 111 11 11';
+    display: inline-block;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__current,
+.accent {
+    color: var(--color-accent);
+    fill: var(--color-accent);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+
+.nav__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav__adress {
+    margin-left: auto;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav--border {
+    border-bottom: 1px solid var(--color-top);
+}
+
+
+.overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg.jpg);
+    background-color: var(--color-background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
